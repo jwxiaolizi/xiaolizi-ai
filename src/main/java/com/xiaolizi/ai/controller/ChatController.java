@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
 
+/**
+ * @author l4784
+ */
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/ai")
