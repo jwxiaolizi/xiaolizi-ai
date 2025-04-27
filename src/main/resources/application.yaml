@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: xiaolizi-ai
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        model: deepseek-r1:8b
+
