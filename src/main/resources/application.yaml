@@ -6,4 +6,7 @@ spring:
       base-url: http://localhost:11434
       chat:
         model: deepseek-r1:8b
-
+logging:
+  level:
+    org.springframework.ai.chat.client.advisor: DEBUG
+    com.xiaolizi.ai: DEBUG

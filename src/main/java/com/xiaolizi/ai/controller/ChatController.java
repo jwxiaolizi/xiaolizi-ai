@@ -17,6 +17,9 @@ public class ChatController {
     private final ChatClient chatClient;
     @RequestMapping(value = "/chat",produces = "text/html;charset=UTF-8")
     public Flux<String> chat(@RequestParam String prompt) {
-        return chatClient.prompt().user(prompt).stream().content();
+        return chatClient.prompt()
+                            .user(prompt)
+                            .stream()
+                            .content();
     }
 }
